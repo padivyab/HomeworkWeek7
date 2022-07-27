@@ -24,10 +24,28 @@ public class Question_3 {
         System.out.println("|____________________________|");
         System.out.print("|   Math      :              |");
         int math = sc.nextInt();
+        System.out.println("|  Science    :            |");
+        int sci=sc.nextInt();
+        System.out.println("|English      :            |");
+        int eng=sc.nextInt();
+       /*do{
+            System.out.println("Invalid input");
+            math = sc.nextInt();
+        }while (math>=101);
         System.out.print("|   Science:                 |");
         int sci = sc.nextInt();
+
+        do{
+            System.out.println("Invalid");
+            sci = sc.nextInt();
+        }while (sci>=101);
         System.out.print("|   English:                 |");
         int eng = sc.nextInt();
+        do{
+            System.out.println("Invalid input");
+            eng = sc.nextInt();
+        }while (eng>=101); */
+
         int t = math + sci + eng;
         double p = t / 300.00 * 100.00;
         String p1 = "";
@@ -48,6 +66,7 @@ public class Question_3 {
             } else {
                 System.out.println("Fail");
             }
+
 
         System.out.println("|Total          :"         + t);
         System.out.println("|Percentage     :"         + p);
